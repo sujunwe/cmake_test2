@@ -7,6 +7,7 @@ LANGUAGES CXX
 )
 
 set(CMAKE_CXX_STANDARD 17)
+enable_testing()
 
 # 设置输出变量, 动态库和可执行文件的输出位置
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
@@ -30,3 +31,4 @@ endif()
 # 添加子目录，寻找子目录CMakeLists
 # 子目录也可以使用上面的输出变量
 add_subdirectory(src)
+add_subdirectory(test/pnc_map_test)
